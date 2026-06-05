@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar for habit tracker */
+.habit-tracker-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.habit-tracker-scroll::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.5);
+  border-radius: 3px;
+}
+
+.habit-tracker-scroll::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.5);
+  border-radius: 3px;
+}
+
+.habit-tracker-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.7);
+}
+
+/* Custom scrollbar for planner */
+.planner-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.planner-scroll::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.5);
+  border-radius: 3px;
+}
+
+.planner-scroll::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.5);
+  border-radius: 3px;
+}
+
+.planner-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.7);
+}
+
+/* Scroll snap for smooth mobile experience */
+.scroll-snap-container {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.scroll-snap-item {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+/* Ensure horizontal containers don't clip on small screens */
+@media (max-width: 639px) {
+  .planner-scroll {
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 8px;
+  }
+}
+
+/* Smooth transitions */
+@layer components {
+  .button-smooth {
+    @apply transition-all duration-200 ease-in-out;
+  }
+
+  .card-hover {
+    @apply hover:shadow-lg hover:border-white/20 transition-all duration-200;
+  }
+}
