@@ -20,7 +20,7 @@ I wanted a simple place to plan my week, track habits, and stay accountable to m
 
 Instead of switching between multiple apps for tasks, habits, and weekly planning, I decided to build a single productivity dashboard that combines everything in one place.
 
-This project became my first completed portfolio project and helped me learn practical software development skills including React, Firebase, Git, GitHub, and deployment with Vercel.
+This project became my first completed software project and helped me learn practical software development skills including React, Firebase, Git, GitHub, and deployment with Vercel.
 
 ---
 
